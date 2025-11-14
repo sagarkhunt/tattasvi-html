@@ -4,34 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jewelry Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,800&display=swap">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Editorial New Italic Ultrabold (800 italic) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap" rel="stylesheet">
+
+    <!-- PP Editorial New alternative (closest match) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <style>
+      @font-face {
+          font-family: 'PP Editorial New';
+          src: local('Playfair Display');
+      }
+    </style>
+
+
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800" style="font-family: 'Fahkwang', sans-serif;">
+  
+  
 
-  <!-- Announcement Bar -->
-  <div class="bg-black text-white text-sm md:text-base flex justify-center items-center gap-5">
-    <p>
-      Free Insured Shipping Worldwide on all orders. Use Code: 
-      <span class="font-semibold">FESTIVE10</span> for 10% Off.
+  <!-- Top Promo Bar -->
+<div class="w-full bg-gray-900 text-white text-sm py-2 px-4 flex flex-col md:flex-row items-center justify-between">
+    <p class="text-center md:text-left">
+        Free Insured Shipping Worldwide on all orders.
+        <span class="font-semibold">Use Code: FESTIVE10</span> for 10% Off.
     </p>
-    <span class="hidden md:inline border-l border-white/40 h-4"></span>
-    <p class="hidden md:inline">IND ?</p>
-  </div>
 
+    <div class="flex items-center space-x-1 mt-1 md:mt-0">
+        <img src="assets/h.png"  class="w-5 h-5  rounded-full mx-auto mb-auto object-cover">
+        <span>IND</span>
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </div>
+</div>
   <!-- Header / Navbar -->
 <header class="bg-white shadow">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between items-center">
     
     
 
     <!-- Navigation Menu -->
-    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium gap-4">
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium gap-10 items-center">
       <a href="#" class="hover:text-rose-600 transition">Earrings</a>
       <a href="#" class="hover:text-rose-600 transition">Pendants & Necklaces</a>
       <a href="#" class="hover:text-rose-600 transition">Bracelets & Bangles</a>
      <!-- Logo -->
-    <a href="#" class="text-2xl font-bold text-rose-600">JewelsCo</a>
+    
+       <img src="assets/logo.png" alt="logo photo" class="w-20 h-25 mx-auto mb-4 object-cover">
       <a href="#" class="hover:text-rose-600 transition">Mangalsutra</a>
       <a href="#" class="hover:text-rose-600 transition">Gifts</a>
       <a href="#" class="hover:text-rose-600 transition">New Arrivals</a>
@@ -42,47 +70,94 @@
  
       <!-- icons -->
      <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa fa-shopping-cart"></i>
-        <i class="fa fa-heart"></i>
-        <i class="fa fa-people"></i>
+     <i class="fa-regular fa-user text-gray-700 text-xl"></i>
+     <i class="fa-regular fa-heart text-gray-700 text-xl"></i>
         <i class="fa-solid fa-bag-shopping"></i>
     </div>
   </div>
 
 <!-- Hero Section -->
-<section class="relative bg-[url('assets/hero1.png')] bg-cover text-white">
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/40"></div>
-
-  <!-- Content -->
-  <div class="relative container mx-auto px-6 py-32 flex flex-col items-center text-center">
-    <!-- Right Image -->
-    
-    <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-      Where Timeless Elegance,<br class="hidden md:block" />
-      Meets Modern Craftsmanship.
-    </h1>
-
-    <p class="text-lg md:text-xl max-w-2xl mb-8">
-      Where every gemstone whispers a story, and every design carries heritage.
-    </p>
-      <div class="hidden md:block relative">
-      <img src="assets/m2.png" class="w-[500px] h-500px z-5">
-      
+<!-- HERO SECTION (Exact Figma Implementation) -->
+<!-- FONTS (put in <head>) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* map PP Editorial New to Playfair Display as a close substitute */
+    @font-face {
+      font-family: 'PP Editorial New';
+      src: local('Playfair Display'), local('Georgia'), serif;
+    }
+    .font-fahkwang { font-family: 'Fahkwang', sans-serif; }
+    .font-editorial { font-family: 'PP Editorial New', serif; }
+    .font-roboto { font-family: 'Roboto', sans-serif; }
+  </style>
+  
+  <!-- HERO (replace existing hero) -->
+  <section class="relative w-full h-50 bg-[#3d3d3f] text-white overflow-hidden">
+  
+    <!-- frame height = 817 (Figma) -->
+    <div class="max-w-[1920px] mx-auto relative" style="height:600px;">
+  
+      <!-- background image -->
+      <img src="assets/hero1.png" alt="hero"
+           class="absolute inset-0 w-full h-full object-cover opacity-40 z-0" />
+  
+      <!-- dark gradient -->
+      <img src="assets/Rectangle 2.png" alt="dark background" class="absolute inset-0 w-full h-full object-cover z-10" />
+  
+      <!-- left content -->
+      <div class="absolute z-10 right-[670px] top-[100px] w-[48%]">
+        <h1 class="font-fahkwang font-semibold text-[40px] leading-[48px] tracking-tight text-white">
+          Where Timeless<br/>Elegance, Meets Modern<br/>Craftsmanship. </h1>
+  
+        <p class="text-[10px] mt-2 opacity-90 max-w-[400px]">
+          Where every gemstone whispers a story, and every design carries heritage.
+        </p>
+  
+        <a href="#" class="mt-4 inline-flex items-center justify-center bg-white text-black 
+                           w-[120px] h-[38px] text-[12px] tracking-wide font-medium  shadow-sm
+                           hover:bg-gray-200 transition">
+          SHOP NOW
+        </a>
+      </div>
+  
+      <!-- right artwork area -->
+      <div class="absolute z-20 right-0 top-8 w-[55%] h-full pointer-events-none">
+  
+        <!-- necklace artwork (use your transparent PNG exported from Figma or the mangalsutra.png) -->
+        <img src="assets/mang2.png" alt="necklace"
+             class="absolute right-[190px] top-[-25px] w-[804px] h-[440px] object-cover z-0"/>
+  
+        <!-- pedestal (ellipse) -->
+        <img src="assets/ellips.png" alt="pedestal"
+             class="absolute right-[55px] bottom-[30px] w-[700px] opacity-50 z-10"/>
+      </div>
+  
+      <!-- 10% Off badge (exact baseline offset) -->
+      <div class="absolute z-40 right-[40px] bottom-[90px] text-right select-none">
+  
+        <div class="flex items-end gap-1 leading-none">
+          <span class="font-editorial italic font-bold text-[70px] leading-[70px]">10</span>
+          <span class="font-roboto italic font-light text-[30px] leading-[70px]">%</span>
+          <span class="font-roboto italic font-light text-[30px] leading-[70px] relative" style="top:4px;">Off</span>
+        </div>
+  
+        <p class="text-[15px] mt-1 opacity-90 font-roboto leading-[12px]">
+          On Making Charges of <br/><br/>Selected Jewellery
+        </p>
+      </div>
+  
     </div>
-    <a href="#shop" class="inline-block bg-rose-600 hover:bg-rose-500 text-white font-semibold px-8 py-3 rounded-lg transition">
-      Shop Now
-    </a>
+  </section>
+  
 
-    <!-- Offer Badge -->
-    <div class="mt-8  text-white-700 px-6 py-3  shadow-lg text-sm font-Ultrabold Italic">
-      10% Off <span class="font-semibold">On Making Charges</span> of Selected Jewellery
-    </div>
-  </div>
-</section>
+
+
   <!-- New Arrivals Section -->
 <section class="container mx-auto px-6 py-16">
-  <h2 class="text-3xl font-bold mb-10 text-gray-800">New Arrivals</h2>
+  <h2 class="text-3xl font-bold  mb-10 text-gray-800">New Arrivals</h2>
 
   <!-- Product Grid -->
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -143,28 +218,32 @@
 </section>
 <!-- Promo Banner Section -->
 <section class="container mx-auto px-6 py-16">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
     
     <!-- Left Banner -->
-    <div class="relative bg-[url('assets/ear.png')] bg-cover bg-center rounded-lg overflow-hidden h-80 flex items-center justify-center text-white">
+    <div class="relative bg-[url('assets/ear.png')] bg-cover bg-center  overflow-hidden h-90 flex items-center justify-center text-white">
       <div class="absolute inset-0 bg-black/40"></div>
       <div class="relative text-center">
-        <h3 class="text-2xl md:text-3xl font-semibold mb-3">Elevate Your Style—Shop Our Latest Collection ! </h3>
-        <a href="#" class="inline-block bg-white text-rose-600 font-semibold px-6 py-2 rounded-md hover:bg-rose-50 transition">
+        <a href="#" class="inline-block border border-white-700 text-white font-semibold px-6 py-2 rounded-full hover:bg-rose-50 transition">
           Shop Now
         </a>
+        <h3 class="text-2xl md:text-3xl font-semibold mb-3">Elevate Your Styleï¿½Shop
+Our Latest Collection !</h3>
+        <p class="text-lg">Experience the Beauty of Fine Jewelry at Prices You Wonï¿½t Believe!</p>
       </div>
     </div>
 
     <!-- Right Banner -->
-    <div class="relative bg-[url('assets/s1.jpg')] bg-cover bg-center rounded-lg overflow-hidden h-80 flex flex-col items-center justify-center text-white text-center">
+    <div class="relative bg-[url('assets/s1.jpg')] bg-cover  bg-center  overflow-hidden h-80 flex flex-col items-center justify-center text-white text-center">
       <div class="absolute inset-0 bg-black/40"></div>
       <div class="relative space-y-3">
-        <h3 class="text-2xl md:text-3xl font-semibold">Elevate Your Style — Shop</h3>
-        <p class="text-lg">Our Latest Collection!</p>
-        <a href="#" class="inline-block bg-white text-rose-600 font-semibold px-6 py-2 rounded-md hover:bg-rose-50 transition">
+        
+        <a href="#" class="inline-block border border-white-700 text-white font-semibold px-6 py-2 rounded-full hover:bg-rose-50 transition">
           Shop Now
         </a>
+        <h3 class="text-2xl md:text-3xl font-semibold">Start Your Journey to
+Exquisite Jewelry</h3>
+        <p class="text-lg">Find Beautiful Jewelry That Fits Your Style and Budget!</p>
       </div>
     </div>
   </div>
@@ -235,7 +314,7 @@
 <section class="relative bg-[url('assets/time.jpg')] bg-cover from-rose-600 via-rose-500 to-rose-400 text-white py-20 text-center overflow-hidden">
   <div class="container mx-auto px-6 relative z-10">
     <!-- Headings -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Don’t Miss Out. Limited Time Offer on Our Exquisite Jewelry!</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Donï¿½t Miss Out. Limited Time Offer on Our Exquisite Jewelry!</h2>
     <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
       This is Your Moment to Shine! Take Advantage of Our Limited-Time Sale and Adorn Yourself with
       Stunning Jewelry at Exceptional Savings!
@@ -367,7 +446,7 @@
 <!-- Trust & Services Section -->
 <section class="bg-gray-50 py-16">
   <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
 
       <!-- Service 1 -->
       <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
@@ -409,7 +488,7 @@
         <p class="text-gray-700 mb-4">
           "Cenes offers exceptional service and beautiful jewelry. I always leave the store feeling like I've made a great investment."
         </p>
-        <span class="block font-semibold text-gray-800"> — Kathleen Parker</span>
+        <span class="block font-semibold text-gray-800"> ï¿½ Kathleen Parker</span>
       </div>
 
       <!-- Review 2 -->
@@ -418,7 +497,7 @@
         <p class="text-gray-700 mb-4">
           "Shopping at Cenes is always a delightful experience. The staff is knowledgeable, and the jewelry is simply breathtaking!"
         </p>
-        <span class="block font-semibold text-gray-800">— Michael Elliott</span>
+        <span class="block font-semibold text-gray-800">ï¿½ Michael Elliott</span>
       </div>
 
       <!-- Review 3 -->
@@ -427,7 +506,7 @@
         <p class="text-gray-700 mb-4">
           "The craftsmanship at Cenes is top-notch. I've bought several pieces from them, and each one is truly a work of art."
         </p>
-        <span class="block font-semibold text-gray-800">— Christopher Casas</span>
+        <span class="block font-semibold text-gray-800">ï¿½ Christopher Casas</span>
       </div>
 
     </div>
@@ -447,7 +526,9 @@
        
         <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition">
         <img src="assets/o3.jpg" alt="Our Journal" class="w-40 h-40 mx-auto mb-4 object-cover">
-         <span class="text-rose-600 text-sm font-semibold uppercase mb-2 block">Abstract</span>
+         <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-md transition">
+        Abstract
+      </a>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">How to Layer Necklaces Like a Pro</h3>
         <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a href="#readmore" class="text-rose-600 font-semibold hover:underline">Read More</a>
@@ -457,7 +538,9 @@
       
        <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition">
         <img src="assets/o2.jpg" alt="Our Journal" class="w-40 h-40 mx-auto mb-4 object-cover">
-        <span class="text-rose-600 text-sm font-semibold uppercase mb-2 block">Abstract</span>
+        <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-md transition">
+        Abstract
+      </a>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">Custom Jewelry Design: Bringing Your Vision to Life</h3>
         <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a href="#readmore" class="text-rose-600 font-semibold hover:underline">Read More</a>
@@ -466,7 +549,9 @@
       <!-- Article 3 -->
       <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition">
         <img src="assets/o1.jpg" alt="Our Journal" class="w-40 h-40 mx-auto mb-4 object-cover">
-        <span class="text-rose-600 text-sm font-semibold uppercase mb-2 block">Abstract</span>
+        <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-md transition">
+        Abstract
+      </a>
         <h3 class="text-xl font-semibold text-gray-800 mb-2">The History and Evolution of Diamond Cuts</h3>
         <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a href="#readmore" class="text-rose-600 font-semibold hover:underline">Read More</a>
@@ -476,10 +561,10 @@
   </div>
 </section>
 <!-- Footer Section -->
-<footer class="bg-gray-900 text-gray-200 py-16">
+<footer class="text-black-200 py-16">
   <div class="container mx-auto px-6">
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Company & Newsletter -->
       <div>
