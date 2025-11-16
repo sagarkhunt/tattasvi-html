@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -32,13 +32,13 @@
   
 
   <!-- Top Promo Bar -->
-<div class="w-full bg-gray-900 text-white text-sm py-2 px-4 flex flex-col md:flex-row items-center justify-between">
+<div class="w-full bg-gray-900 text-white text-sm py-2 px-4 flex flex-col md:flex-row  sm:text-sm md:text-base lg:text-xl items-center justify-between text-sm md:text-base">
     <p class="text-center md:text-left">
         Free Insured Shipping Worldwide on all orders.
         <span class="font-semibold">Use Code: FESTIVE10</span> for 10% Off.
     </p>
 
-    <div class="flex items-center space-x-1 mt-1 md:mt-0">
+    <div class="flex items-center space-x-1 mt-1  md:text-right">
         <img src="assets/h.png"  class="w-5 h-5  rounded-full mx-auto mb-auto object-cover">
         <span>IND</span>
         <i class="fa-solid fa-indian-rupee-sign"></i>
@@ -48,12 +48,12 @@
 </div>
   <!-- Header / Navbar -->
 <header class="bg-white shadow">
-  <div class="container mx-auto px-6 py-4 flex items-center justify-between items-center">
+  <div class="container mx-auto  sm:text-sm md:text-base lg:text-xl md:w-auto md:text-right px-6 py-4 flex items-center justify-between items-center">
     
     
 
     <!-- Navigation Menu -->
-    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium gap-10 items-center">
+    <nav class="md:flex sm:text-sm md:text-base lg:text-xl space-x-8 text-gray-700 font-medium gap-10 items-center">
       <a href="#" class="hover:text-rose-600 transition">Earrings</a>
       <a href="#" class="hover:text-rose-600 transition">Pendants & Necklaces</a>
       <a href="#" class="hover:text-rose-600 transition">Bracelets & Bangles</a>
@@ -66,7 +66,7 @@
     </nav>
      
     <!-- Right Section (Cart & Mobile Menu) -->
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-3 sm:text-sm md:text-base">
  
       <!-- icons -->
      <i class="fa-solid fa-magnifying-glass"></i>
@@ -157,14 +157,26 @@
 
   <!-- New Arrivals Section -->
 <section class="container mx-auto px-6 py-16">
+  <div class="flex items-center space-x-1 mt-1  md:text-right">
   <h2 class="text-3xl font-bold  mb-10 text-gray-800">New Arrivals</h2>
+   <span class="absolute right-0 text-xs px-44 py-2">
+   <i class="fa-solid fa-chevron-left text-gray-700"></i>
+   <i class="fa-solid fa-chevron-right text-gray-700"></i>
+  </span>
+    </div>
 
-  <!-- Product Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+ <!-- Product Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-8">
     
     <!-- Product Card 1 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/nw1.png" class="mx-auto mb-4 rounded-lg object-cover">
+    <div class=" relative bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center group">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+      <img src="assets/nww1.png" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+   <!-- Second Image (Hover State) -->
+       <img src="assets/nw1.png" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+     
       <h3 class="text-lg font-semibold text-gray-800 mb-2">Eternity Band</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
@@ -176,9 +188,14 @@
     </div>
 
     <!-- Product Card 2 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/nw2.jpg" alt="Birthstone Earrings" class="mx-auto mb-4 rounded-lg object-cover">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">Birthstone Earrings</h3>
+    <div class=" relative bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center group">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+      <img src="assets/nww2.png" alt="Birthstone Earrings" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+      <img src="assets/nw2.jpg" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+     
+     <h3 class="text-lg font-semibold text-gray-800 mb-2">Birthstone Earrings</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
         <span class="text-rose-600 font-bold"><i class="fa-solid fa-indian-rupee-sign"></i>14,999.00</span>
@@ -189,9 +206,14 @@
     </div>
 
     <!-- Product Card 3 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/nw3.png" alt="Byzantine Bracelet" class="mx-auto mb-4 rounded-lg object-cover">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">Byzantine Bracelet</h3>
+    <div class=" relative bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center group">
+     <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+      <img src="assets/nww3.png" alt="Byzantine Bracelet" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+     <img src="assets/nw3.png" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+     
+ <h3 class="text-lg font-semibold text-gray-800 mb-2">Byzantine Bracelet</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
         <span class="text-rose-600 font-bold"><i class="fa-solid fa-indian-rupee-sign"></i>14,999.00</span>
@@ -202,9 +224,14 @@
     </div>
 
     <!-- Product Card 4 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/nw4.jpg" alt="Infinity Bracelet" class="mx-auto mb-4 rounded-lg object-cover">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">Infinity Bracelet</h3>
+    <div class="relative bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center group">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+      <img src="assets/nww4.png" alt="Infinity Bracelet" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+      <img src="assets/nw4.jpg" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+     
+<h3 class="text-lg font-semibold text-gray-800 mb-2">Infinity Bracelet</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
         <span class="text-rose-600 font-bold"><i class="fa-solid fa-indian-rupee-sign"></i>14,999.00</span>
@@ -221,7 +248,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
     
     <!-- Left Banner -->
-    <div class="relative bg-[url('assets/ear.png')] bg-cover bg-center  overflow-hidden h-90 flex items-center justify-center text-white">
+    <div class="relative bg-[url('assets/ear.png')] bg-cover bg-center  overflow-hidden h-30 flex items-center justify-center text-white">
       <div class="absolute inset-0 bg-black/40"></div>
       <div class="relative text-center">
         <a href="#" class="inline-block border border-white-700 text-white font-semibold px-6 py-2 rounded-full hover:bg-rose-50 transition">
@@ -252,14 +279,26 @@ Exquisite Jewelry</h3>
 
 <!-- Best Seller Section -->
 <section class="container mx-auto px-6 py-16">
-  <h2 class="text-3xl font-bold mb-10 text-gray-800">Best Seller</h2>
+  <div class="flex items-center space-x-1 mt-1  md:text-right">
+  <h2 class="text-3xl font-bold  mb-10 text-gray-800">Best Seller</h2>
+   <span class="absolute right-0 text-xs px-44 py-2">
+   <i class="fa-solid fa-chevron-left text-gray-700"></i>
+   <i class="fa-solid fa-chevron-right text-gray-700"></i>
+  </span>
+    </div>
+  
 
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
     <!-- Product 1 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/bs1.jpg" class="mx-auto mb-4 rounded-lg object-cover">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">Anniversary Ring</h3>
+    <div class=" relative group bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center  group">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+      <img src="assets/bss1.png" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+      <img src="assets/bs1.jpg" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+           
+   <h3 class="text-lg font-semibold text-gray-800 mb-2">Anniversary Ring</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
         <span class="text-rose-600 font-bold"><i class="fa-solid fa-indian-rupee-sign"></i>14,999.00</span>
@@ -270,8 +309,13 @@ Exquisite Jewelry</h3>
     </div>
 
     <!-- Product 2 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/bs2.jpg" alt="Vintage-Inspired Earrings" class="mx-auto mb-4 rounded-lg object-cover">
+    <div class=" relative group bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center  group">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+     <img src="assets/bss2.png" alt="Vintage-Inspired Earrings" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+     <img src="assets/bs2.jpg" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+    
       <h3 class="text-lg font-semibold text-gray-800 mb-2">Vintage-Inspired Earrings</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
@@ -283,9 +327,14 @@ Exquisite Jewelry</h3>
     </div>
 
     <!-- Product 3 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/bs3.jpg" alt="Wedding Band" class="mx-auto mb-4 rounded-lg object-cover">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">Wedding Band</h3>
+    <div class=" relative group bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center  group ">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+      <img src="assets/bss3.png" alt="Wedding Band" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+      <img src="assets/bs3.jpg" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+     
+     <h3 class="text-lg font-semibold text-gray-800 mb-2">Wedding Band</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
         <span class="text-rose-600 font-bold"><i class="fa-solid fa-indian-rupee-sign"></i>14,999.00</span>
@@ -296,9 +345,14 @@ Exquisite Jewelry</h3>
     </div>
 
     <!-- Product 4 -->
-    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center">
-      <img src="assets/bs4.jpg" class="mx-auto mb-4 rounded-lg object-cover">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">Huggie Earrings</h3>
+    <div class=" relative bg-white rounded-lg shadow hover:shadow-lg transition p-4 text-center  group ">
+      <span class="absolute top-3 right-3 text-xs px-3 py-1"><i class="fa-regular fa-heart text-gray-700 text-xl"></i></span>
+      <span class="absolute top-10 right-3 text-xs px-3 py-1"><i class="fa-regular fa-eye text-gray-600 text-xl"></i></span>
+        
+     <img src="assets/bss4.png" class="mx-auto mb-4 rounded-lg object-cover transition-opacity duration-500 ease-in-out  group-hover:opacity-0">
+     <img src="assets/bs4.jpg" class="mx-auto mb-4 rounded-lg object-cover absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+      
+     <h3 class="text-lg font-semibold text-gray-800 mb-2">Huggie Earrings</h3>
       <div class="mb-3">
         <span class="text-gray-400 line-through mr-2"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</span>
         <span class="text-rose-600 font-bold"><i class="fa-solid fa-indian-rupee-sign"></i>14,999.00</span>
@@ -311,17 +365,14 @@ Exquisite Jewelry</h3>
   </div>
 </section>
 <!-- Limited Time Offer Section -->
-<section class="relative bg-[url('assets/time.jpg')] bg-cover from-rose-600 via-rose-500 to-rose-400 text-white py-20 text-center overflow-hidden">
-  <div class="container mx-auto px-6 relative z-10">
+<section class="relative bg-[url('assets/time.jpg')] bg-cover from-rose-600 via-rose-500 to-rose-400 text-white py-20 text-left overflow-hidden">
+  <div class="container md:w-1/2 mx-auto px-6 relative z-10 md:text-left">
     <!-- Headings -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Don�t Miss Out. Limited Time Offer on Our Exquisite Jewelry!</h2>
-    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-      This is Your Moment to Shine! Take Advantage of Our Limited-Time Sale and Adorn Yourself with
-      Stunning Jewelry at Exceptional Savings!
-    </p>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-left">Don�t Miss Out. Limited Time Offer on Our Exquisite Jewelry!</h2>
+    
 
     <!-- Countdown Timer -->
-    <div id="countdown" class="flex justify-center gap-4 md:gap-6 mb-10">
+    <div id="countdown" class="flex md:justify-start justify-center gap-4 md:gap-6 mb-10">
       <div class="flex flex-col items-center">
         <span id="days" class="text-4xl md:text-5xl font-bold">00</span>
         <span class="text-sm uppercase tracking-wide">Days</span>
@@ -341,9 +392,15 @@ Exquisite Jewelry</h3>
     </div>
 
     <!-- CTA Button -->
+
+     <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+      This is Your Moment to Shine! Take Advantage of Our Limited-Time Sale and Adorn Yourself with
+      Stunning Jewelry at Exceptional Savings!
+    </p>
     <a href="#shop" class="inline-block bg-white text-rose-600 font-semibold px-8 py-3 rounded-lg hover:bg-rose-50 transition">
       Get Started
     </a>
+
   </div>
 
   <!-- Optional subtle overlay pattern -->
@@ -520,39 +577,39 @@ Exquisite Jewelry</h3>
     <p class="text-gray-600 mb-10">Your Source for Jewelry Inspiration and News</p>
 
     <!-- Blog Cards Grid -->
-    <div class="grid gap-8 md:grid-cols-3">
+    <div class="grid gap-0 md:grid-cols-3">
 
       <!-- Article 1 -->
        
-        <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition">
-        <img src="assets/o3.jpg" alt="Our Journal" class="w-40 h-40 mx-auto mb-4 object-cover">
-         <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-md transition">
+        <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition text-left">
+        <img src="assets/o3.jpg" alt="Our Journal" class="w-50 h-50 mx-auto mb-4 object-cover"><br>
+         <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2  transition">
         Abstract
-      </a>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">How to Layer Necklaces Like a Pro</h3>
+      </a><br>
+        <br><h3 class="text-xl font-semibold text-gray-800 mb-2">How to Layer Necklaces Like a Pro</h3><br>
         <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a href="#readmore" class="text-rose-600 font-semibold hover:underline">Read More</a>
       </div>
 
       <!-- Article 2 -->
       
-       <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition">
-        <img src="assets/o2.jpg" alt="Our Journal" class="w-40 h-40 mx-auto mb-4 object-cover">
-        <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-md transition">
+       <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition text-left">
+        <img src="assets/o2.jpg" alt="Our Journal" class="w-50 h-50 mx-auto mb-4 object-cover"><br>
+        <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2  transition">
         Abstract
-      </a>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Custom Jewelry Design: Bringing Your Vision to Life</h3>
+      </a><br>
+        <br><h3 class="text-xl font-semibold text-gray-800 mb-2">Custom Jewelry Design: Bringing Your Vision to Life</h3>
         <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a href="#readmore" class="text-rose-600 font-semibold hover:underline">Read More</a>
       </div>
 
       <!-- Article 3 -->
-      <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition">
-        <img src="assets/o1.jpg" alt="Our Journal" class="w-40 h-40 mx-auto mb-4 object-cover">
-        <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-md transition">
+      <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition text-left">
+        <img src="assets/o1.jpg" alt="Our Journal" class="w-50 h-50 mx-auto mb-4 object-cover"><br>
+        <a href="#" class="bg-black hover:bg-pink-600 text-white font-semibold px-6 py-2  transition">
         Abstract
-      </a>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">The History and Evolution of Diamond Cuts</h3>
+      </a><br>
+        <br><h3 class="text-xl font-semibold text-gray-800 mb-2">The History and Evolution of Diamond Cuts</h3>
         <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a href="#readmore" class="text-rose-600 font-semibold hover:underline">Read More</a>
       </div>
